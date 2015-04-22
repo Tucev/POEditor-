@@ -15,5 +15,10 @@ namespace POEditor
         {
             InitializeComponent ();
         }
+
+        private void FormKeys_Load (object sender, EventArgs e)
+        {
+
+        }
     }
 }
