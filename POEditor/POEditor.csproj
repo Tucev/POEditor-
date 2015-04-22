@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -126,37 +126,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\page.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_delete.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_error.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_gear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\page_white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\folder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_as.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\New project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Pencil yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

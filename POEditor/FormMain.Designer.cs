@@ -1,6 +1,6 @@
 ﻿namespace POEditor
 {
-    partial class FormMain
+    partial class FormEditor
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -27,180 +27,315 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager (typeof (FormMain));
-            this.listView1 = new System.Windows.Forms.ListView ();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader) (new System.Windows.Forms.ColumnHeader ()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader) (new System.Windows.Forms.ColumnHeader ()));
-            this.textBox1 = new System.Windows.Forms.TextBox ();
-            this.textBox2 = new System.Windows.Forms.TextBox ();
-            this.button1 = new System.Windows.Forms.Button ();
-            this.textBox3 = new System.Windows.Forms.TextBox ();
-            this.button2 = new System.Windows.Forms.Button ();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip ();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox ();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton ();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem ();
-            this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem ();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip ();
-            this.toolStrip1.SuspendLayout ();
-            this.menuStrip1.SuspendLayout ();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager (typeof (FormEditor));
+            this.comboBoxLanguages = new System.Windows.Forms.ComboBox ();
+            this.labelLanguages = new System.Windows.Forms.Label ();
+            this.progressBar = new System.Windows.Forms.ProgressBar ();
+            this.listView = new System.Windows.Forms.ListView ();
+            this.panelHeader = new System.Windows.Forms.Panel ();
+            this.labelDescription = new System.Windows.Forms.Label ();
+            this.labelHeader = new System.Windows.Forms.Label ();
+            this.buttonDictionary = new System.Windows.Forms.Button ();
+            this.buttonSave = new System.Windows.Forms.Button ();
+            this.groupBoxLanguage = new System.Windows.Forms.GroupBox ();
+            this.textBoxPath = new System.Windows.Forms.TextBox ();
+            this.labelPath = new System.Windows.Forms.Label ();
+            this.columnHeaderTerms = ((System.Windows.Forms.ColumnHeader) (new System.Windows.Forms.ColumnHeader ()));
+            this.columnHeaderTranslated = ((System.Windows.Forms.ColumnHeader) (new System.Windows.Forms.ColumnHeader ()));
+            this.panelDictionary = new System.Windows.Forms.Panel ();
+            this.splitContainerTotal = new System.Windows.Forms.SplitContainer ();
+            this.splitContainerItems = new System.Windows.Forms.SplitContainer ();
+            this.textBoxTerms = new System.Windows.Forms.TextBox ();
+            this.textBoxTranslated = new System.Windows.Forms.TextBox ();
+            this.pictureBoxForm = new System.Windows.Forms.PictureBox ();
+            this.panelHeader.SuspendLayout ();
+            this.groupBoxLanguage.SuspendLayout ();
+            this.panelDictionary.SuspendLayout ();
+            this.splitContainerTotal.Panel1.SuspendLayout ();
+            this.splitContainerTotal.Panel2.SuspendLayout ();
+            this.splitContainerTotal.SuspendLayout ();
+            this.splitContainerItems.Panel1.SuspendLayout ();
+            this.splitContainerItems.Panel2.SuspendLayout ();
+            this.splitContainerItems.SuspendLayout ();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBoxForm)).BeginInit ();
             this.SuspendLayout ();
             // 
-            // listView1
+            // comboBoxLanguages
             // 
-            this.listView1.AllowColumnReorder = true;
-            this.listView1.Columns.AddRange (new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point (12, 82);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size (381, 284);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.comboBoxLanguages.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxLanguages.FormattingEnabled = true;
+            this.comboBoxLanguages.Location = new System.Drawing.Point (161, 20);
+            this.comboBoxLanguages.Name = "comboBoxLanguages";
+            this.comboBoxLanguages.Size = new System.Drawing.Size (439, 21);
+            this.comboBoxLanguages.TabIndex = 0;
             // 
-            // columnHeader1
+            // labelLanguages
             // 
-            this.columnHeader1.Width = 140;
+            this.labelLanguages.AutoSize = true;
+            this.labelLanguages.Location = new System.Drawing.Point (10, 23);
+            this.labelLanguages.Name = "labelLanguages";
+            this.labelLanguages.Size = new System.Drawing.Size (37, 13);
+            this.labelLanguages.TabIndex = 1;
+            this.labelLanguages.Text = "Язык:";
             // 
-            // columnHeader2
+            // progressBar
             // 
-            this.columnHeader2.Width = 153;
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar.Location = new System.Drawing.Point (12, 427);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size (695, 23);
+            this.progressBar.TabIndex = 2;
             // 
-            // textBox1
+            // listView
             // 
-            this.textBox1.Location = new System.Drawing.Point (12, 372);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size (143, 100);
-            this.textBox1.TabIndex = 3;
+            this.listView.Columns.AddRange (new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderTerms,
+            this.columnHeaderTranslated});
+            this.listView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView.GridLines = true;
+            this.listView.Location = new System.Drawing.Point (0, 0);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size (690, 192);
+            this.listView.TabIndex = 4;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
             // 
-            // textBox2
+            // panelHeader
             // 
-            this.textBox2.Location = new System.Drawing.Point (161, 372);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size (232, 100);
-            this.textBox2.TabIndex = 4;
+            this.panelHeader.BackColor = System.Drawing.Color.Firebrick;
+            this.panelHeader.Controls.Add (this.labelDescription);
+            this.panelHeader.Controls.Add (this.labelHeader);
+            this.panelHeader.Controls.Add (this.pictureBoxForm);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point (0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size (719, 64);
+            this.panelHeader.TabIndex = 6;
             // 
-            // button1
+            // labelDescription
             // 
-            this.button1.Location = new System.Drawing.Point (399, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size (75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.labelDescription.AutoSize = true;
+            this.labelDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelDescription.Location = new System.Drawing.Point (67, 31);
+            this.labelDescription.Name = "labelDescription";
+            this.labelDescription.Size = new System.Drawing.Size (246, 13);
+            this.labelDescription.TabIndex = 2;
+            this.labelDescription.Text = "Выполняйте редактирование пунктов словаря";
             // 
-            // textBox3
+            // labelHeader
             // 
-            this.textBox3.Location = new System.Drawing.Point (399, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size (225, 21);
-            this.textBox3.TabIndex = 6;
+            this.labelHeader.AutoSize = true;
+            this.labelHeader.Font = new System.Drawing.Font ("Tahoma", 9.25F, System.Drawing.FontStyle.Bold);
+            this.labelHeader.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelHeader.Location = new System.Drawing.Point (67, 12);
+            this.labelHeader.Name = "labelHeader";
+            this.labelHeader.Size = new System.Drawing.Size (178, 16);
+            this.labelHeader.TabIndex = 1;
+            this.labelHeader.Text = "Редактирование словаря";
             // 
-            // button2
+            // buttonDictionary
             // 
-            this.button2.Location = new System.Drawing.Point (399, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size (75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonDictionary.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDictionary.Location = new System.Drawing.Point (631, 88);
+            this.buttonDictionary.Name = "buttonDictionary";
+            this.buttonDictionary.Size = new System.Drawing.Size (75, 23);
+            this.buttonDictionary.TabIndex = 7;
+            this.buttonDictionary.Text = "Словарь";
+            this.buttonDictionary.UseVisualStyleBackColor = true;
             // 
-            // toolStrip1
+            // buttonSave
             // 
-            this.toolStrip1.Items.AddRange (new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox1,
-            this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point (0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size (694, 25);
-            this.toolStrip1.TabIndex = 8;
-            this.toolStrip1.Text = "toolStrip1";
+            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSave.Location = new System.Drawing.Point (631, 115);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size (75, 23);
+            this.buttonSave.TabIndex = 8;
+            this.buttonSave.Text = "Сохранить";
+            this.buttonSave.UseVisualStyleBackColor = true;
             // 
-            // toolStripComboBox1
+            // groupBoxLanguage
             // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size (121, 25);
+            this.groupBoxLanguage.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLanguage.Controls.Add (this.labelPath);
+            this.groupBoxLanguage.Controls.Add (this.textBoxPath);
+            this.groupBoxLanguage.Controls.Add (this.labelLanguages);
+            this.groupBoxLanguage.Controls.Add (this.comboBoxLanguages);
+            this.groupBoxLanguage.Location = new System.Drawing.Point (12, 70);
+            this.groupBoxLanguage.Name = "groupBoxLanguage";
+            this.groupBoxLanguage.Size = new System.Drawing.Size (613, 81);
+            this.groupBoxLanguage.TabIndex = 9;
+            this.groupBoxLanguage.TabStop = false;
+            this.groupBoxLanguage.Text = "Выбор языка";
             // 
-            // toolStripButton1
+            // textBoxPath
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::POEditor.Properties.Resources.page;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size (23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.textBoxPath.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxPath.Location = new System.Drawing.Point (161, 47);
+            this.textBoxPath.Name = "textBoxPath";
+            this.textBoxPath.Size = new System.Drawing.Size (439, 21);
+            this.textBoxPath.TabIndex = 9;
             // 
-            // файлToolStripMenuItem
+            // labelPath
             // 
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size (48, 20);
-            this.файлToolStripMenuItem.Text = "Файл";
+            this.labelPath.AutoSize = true;
+            this.labelPath.Location = new System.Drawing.Point (12, 50);
+            this.labelPath.Name = "labelPath";
+            this.labelPath.Size = new System.Drawing.Size (84, 13);
+            this.labelPath.TabIndex = 10;
+            this.labelPath.Text = "Расположение:";
             // 
-            // правкаToolStripMenuItem
+            // columnHeaderTerms
             // 
-            this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
-            this.правкаToolStripMenuItem.Size = new System.Drawing.Size (59, 20);
-            this.правкаToolStripMenuItem.Text = "Правка";
+            this.columnHeaderTerms.Text = "Условие";
+            this.columnHeaderTerms.Width = 298;
             // 
-            // menuStrip1
+            // columnHeaderTranslated
             // 
-            this.menuStrip1.Items.AddRange (new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.правкаToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point (0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size (694, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            this.columnHeaderTranslated.Tag = "";
+            this.columnHeaderTranslated.Text = "Перевод";
+            this.columnHeaderTranslated.Width = 387;
             // 
-            // FormMain
+            // panelDictionary
+            // 
+            this.panelDictionary.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDictionary.Controls.Add (this.splitContainerTotal);
+            this.panelDictionary.Location = new System.Drawing.Point (12, 157);
+            this.panelDictionary.Name = "panelDictionary";
+            this.panelDictionary.Size = new System.Drawing.Size (694, 264);
+            this.panelDictionary.TabIndex = 10;
+            // 
+            // splitContainerTotal
+            // 
+            this.splitContainerTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainerTotal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerTotal.Location = new System.Drawing.Point (0, 0);
+            this.splitContainerTotal.Name = "splitContainerTotal";
+            this.splitContainerTotal.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainerTotal.Panel1
+            // 
+            this.splitContainerTotal.Panel1.Controls.Add (this.listView);
+            // 
+            // splitContainerTotal.Panel2
+            // 
+            this.splitContainerTotal.Panel2.Controls.Add (this.splitContainerItems);
+            this.splitContainerTotal.Size = new System.Drawing.Size (694, 264);
+            this.splitContainerTotal.SplitterDistance = 196;
+            this.splitContainerTotal.TabIndex = 11;
+            // 
+            // splitContainerItems
+            // 
+            this.splitContainerItems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainerItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerItems.Location = new System.Drawing.Point (0, 0);
+            this.splitContainerItems.Name = "splitContainerItems";
+            // 
+            // splitContainerItems.Panel1
+            // 
+            this.splitContainerItems.Panel1.Controls.Add (this.textBoxTerms);
+            // 
+            // splitContainerItems.Panel2
+            // 
+            this.splitContainerItems.Panel2.Controls.Add (this.textBoxTranslated);
+            this.splitContainerItems.Size = new System.Drawing.Size (694, 64);
+            this.splitContainerItems.SplitterDistance = 331;
+            this.splitContainerItems.TabIndex = 1;
+            // 
+            // textBoxTerms
+            // 
+            this.textBoxTerms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTerms.Location = new System.Drawing.Point (0, 0);
+            this.textBoxTerms.Multiline = true;
+            this.textBoxTerms.Name = "textBoxTerms";
+            this.textBoxTerms.ReadOnly = true;
+            this.textBoxTerms.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTerms.Size = new System.Drawing.Size (327, 60);
+            this.textBoxTerms.TabIndex = 0;
+            // 
+            // textBoxTranslated
+            // 
+            this.textBoxTranslated.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTranslated.Location = new System.Drawing.Point (0, 0);
+            this.textBoxTranslated.Multiline = true;
+            this.textBoxTranslated.Name = "textBoxTranslated";
+            this.textBoxTranslated.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTranslated.Size = new System.Drawing.Size (355, 60);
+            this.textBoxTranslated.TabIndex = 0;
+            // 
+            // pictureBoxForm
+            // 
+            this.pictureBoxForm.Image = ((System.Drawing.Image) (resources.GetObject ("pictureBoxForm.Image")));
+            this.pictureBoxForm.InitialImage = null;
+            this.pictureBoxForm.Location = new System.Drawing.Point (10, 8);
+            this.pictureBoxForm.Name = "pictureBoxForm";
+            this.pictureBoxForm.Size = new System.Drawing.Size (48, 48);
+            this.pictureBoxForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxForm.TabIndex = 0;
+            this.pictureBoxForm.TabStop = false;
+            // 
+            // FormEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size (694, 486);
-            this.Controls.Add (this.toolStrip1);
-            this.Controls.Add (this.button2);
-            this.Controls.Add (this.textBox3);
-            this.Controls.Add (this.button1);
-            this.Controls.Add (this.textBox2);
-            this.Controls.Add (this.textBox1);
-            this.Controls.Add (this.listView1);
-            this.Controls.Add (this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size (719, 462);
+            this.Controls.Add (this.panelDictionary);
+            this.Controls.Add (this.groupBoxLanguage);
+            this.Controls.Add (this.panelHeader);
+            this.Controls.Add (this.buttonSave);
+            this.Controls.Add (this.progressBar);
+            this.Controls.Add (this.buttonDictionary);
             this.Font = new System.Drawing.Font ("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.Icon = ((System.Drawing.Icon) (resources.GetObject ("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FormMain";
+            this.MinimumSize = new System.Drawing.Size (735, 500);
+            this.Name = "FormEditor";
             this.Text = "POEditor";
             this.Load += new System.EventHandler (this.FormMain_Load);
-            this.toolStrip1.ResumeLayout (false);
-            this.toolStrip1.PerformLayout ();
-            this.menuStrip1.ResumeLayout (false);
-            this.menuStrip1.PerformLayout ();
+            this.panelHeader.ResumeLayout (false);
+            this.panelHeader.PerformLayout ();
+            this.groupBoxLanguage.ResumeLayout (false);
+            this.groupBoxLanguage.PerformLayout ();
+            this.panelDictionary.ResumeLayout (false);
+            this.splitContainerTotal.Panel1.ResumeLayout (false);
+            this.splitContainerTotal.Panel2.ResumeLayout (false);
+            this.splitContainerTotal.ResumeLayout (false);
+            this.splitContainerItems.Panel1.ResumeLayout (false);
+            this.splitContainerItems.Panel1.PerformLayout ();
+            this.splitContainerItems.Panel2.ResumeLayout (false);
+            this.splitContainerItems.Panel2.PerformLayout ();
+            this.splitContainerItems.ResumeLayout (false);
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBoxForm)).EndInit ();
             this.ResumeLayout (false);
-            this.PerformLayout ();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem правкаToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ComboBox comboBoxLanguages;
+        private System.Windows.Forms.Label labelLanguages;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Label labelDescription;
+        private System.Windows.Forms.Label labelHeader;
+        private System.Windows.Forms.PictureBox pictureBoxForm;
+        private System.Windows.Forms.Button buttonDictionary;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.GroupBox groupBoxLanguage;
+        private System.Windows.Forms.Label labelPath;
+        private System.Windows.Forms.TextBox textBoxPath;
+        private System.Windows.Forms.ColumnHeader columnHeaderTerms;
+        private System.Windows.Forms.ColumnHeader columnHeaderTranslated;
+        private System.Windows.Forms.Panel panelDictionary;
+        private System.Windows.Forms.SplitContainer splitContainerTotal;
+        private System.Windows.Forms.SplitContainer splitContainerItems;
+        private System.Windows.Forms.TextBox textBoxTerms;
+        private System.Windows.Forms.TextBox textBoxTranslated;
+
     }
 }
 

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace POEditor
 {
-    public partial class FormMain : Form
+    public partial class FormEditor : Form
     {
-        public FormMain ()
+        public FormEditor ()
         {
             InitializeComponent ();
         }
