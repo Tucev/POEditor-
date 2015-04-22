@@ -57,7 +57,7 @@
             this.labelHeader = new System.Windows.Forms.Label ();
             this.labelDescription = new System.Windows.Forms.Label ();
             this.pictureBoxForm = new System.Windows.Forms.PictureBox ();
-            this.button1 = new System.Windows.Forms.Button ();
+            this.buttonClear = new System.Windows.Forms.Button ();
             this.groupBoxProject.SuspendLayout ();
             this.groupBoxLanguages.SuspendLayout ();
             this.panelHeader.SuspendLayout ();
@@ -87,7 +87,7 @@
             this.groupBoxLanguages.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLanguages.Controls.Add (this.button1);
+            this.groupBoxLanguages.Controls.Add (this.buttonClear);
             this.groupBoxLanguages.Controls.Add (this.buttonRemove);
             this.groupBoxLanguages.Controls.Add (this.buttonSave);
             this.groupBoxLanguages.Controls.Add (this.label3);
@@ -168,9 +168,9 @@
             this.labelNameProject.AutoSize = true;
             this.labelNameProject.Location = new System.Drawing.Point (10, 23);
             this.labelNameProject.Name = "labelNameProject";
-            this.labelNameProject.Size = new System.Drawing.Size (59, 13);
+            this.labelNameProject.Size = new System.Drawing.Size (30, 13);
             this.labelNameProject.TabIndex = 3;
-            this.labelNameProject.Text = "Название:";
+            this.labelNameProject.Text = "Имя:";
             // 
             // labelPath
             // 
@@ -284,7 +284,7 @@
             // columnHeaderName
             // 
             this.columnHeaderName.Text = "Язык";
-            this.columnHeaderName.Width = 109;
+            this.columnHeaderName.Width = 113;
             // 
             // columnHeaderFile
             // 
@@ -362,16 +362,16 @@
             this.pictureBoxForm.TabIndex = 0;
             this.pictureBoxForm.TabStop = false;
             // 
-            // button1
+            // buttonClear
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point (349, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size (68, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Очистить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonClear.Location = new System.Drawing.Point (349, 102);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size (68, 23);
+            this.buttonClear.TabIndex = 11;
+            this.buttonClear.Text = "Очистить";
+            this.buttonClear.UseVisualStyleBackColor = true;
             // 
             // FormNewProject
             // 
@@ -432,6 +432,6 @@
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Label labelHeader;
         private System.Windows.Forms.PictureBox pictureBoxForm;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
