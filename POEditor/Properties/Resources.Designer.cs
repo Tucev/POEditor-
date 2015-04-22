@@ -63,6 +63,16 @@ namespace POEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diary {
+            get {
+                object obj = ResourceManager.GetObject("Diary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap New_project {
             get {
                 object obj = ResourceManager.GetObject("New_project", resourceCulture);

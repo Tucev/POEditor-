@@ -15,7 +15,7 @@ namespace POEditor
         {
             Application.EnableVisualStyles ();
             Application.SetCompatibleTextRenderingDefault (false);
-            Application.Run (new FormEditor ());
+            Application.Run (new FormKeys ());
         }
     }
 }

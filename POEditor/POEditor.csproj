@@ -56,7 +56,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -64,11 +63,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="FormEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="FormEditor.Designer.cs">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeys.Designer.cs">
+      <DependentUpon>FormKeys.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNewProject.cs">
       <SubType>Form</SubType>
@@ -78,8 +83,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <EmbeddedResource Include="FormEditor.resx">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeys.resx">
+      <DependentUpon>FormKeys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewProject.resx">
       <DependentUpon>FormNewProject.cs</DependentUpon>
@@ -130,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Diary.png" />
     <None Include="Resources\Pencil yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

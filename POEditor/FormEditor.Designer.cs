@@ -35,7 +35,7 @@
             this.panelHeader = new System.Windows.Forms.Panel ();
             this.labelDescription = new System.Windows.Forms.Label ();
             this.labelHeader = new System.Windows.Forms.Label ();
-            this.buttonDictionary = new System.Windows.Forms.Button ();
+            this.buttonKeys = new System.Windows.Forms.Button ();
             this.buttonSave = new System.Windows.Forms.Button ();
             this.groupBoxLanguage = new System.Windows.Forms.GroupBox ();
             this.textBoxPath = new System.Windows.Forms.TextBox ();
@@ -135,15 +135,15 @@
             this.labelHeader.TabIndex = 1;
             this.labelHeader.Text = "Редактирование словаря";
             // 
-            // buttonDictionary
+            // buttonKeys
             // 
-            this.buttonDictionary.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDictionary.Location = new System.Drawing.Point (631, 88);
-            this.buttonDictionary.Name = "buttonDictionary";
-            this.buttonDictionary.Size = new System.Drawing.Size (75, 23);
-            this.buttonDictionary.TabIndex = 7;
-            this.buttonDictionary.Text = "Словарь";
-            this.buttonDictionary.UseVisualStyleBackColor = true;
+            this.buttonKeys.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonKeys.Location = new System.Drawing.Point (631, 88);
+            this.buttonKeys.Name = "buttonKeys";
+            this.buttonKeys.Size = new System.Drawing.Size (75, 23);
+            this.buttonKeys.TabIndex = 7;
+            this.buttonKeys.Text = "Ключи";
+            this.buttonKeys.UseVisualStyleBackColor = true;
             // 
             // buttonSave
             // 
@@ -190,7 +190,7 @@
             // 
             // columnHeaderTerms
             // 
-            this.columnHeaderTerms.Text = "Условие";
+            this.columnHeaderTerms.Text = "Ключи";
             this.columnHeaderTerms.Width = 298;
             // 
             // columnHeaderTranslated
@@ -289,7 +289,7 @@
             this.Controls.Add (this.panelHeader);
             this.Controls.Add (this.buttonSave);
             this.Controls.Add (this.progressBar);
-            this.Controls.Add (this.buttonDictionary);
+            this.Controls.Add (this.buttonKeys);
             this.Font = new System.Drawing.Font ("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.MinimumSize = new System.Drawing.Size (735, 500);
             this.Name = "FormEditor";
@@ -323,7 +323,7 @@
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Label labelHeader;
         private System.Windows.Forms.PictureBox pictureBoxForm;
-        private System.Windows.Forms.Button buttonDictionary;
+        private System.Windows.Forms.Button buttonKeys;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.GroupBox groupBoxLanguage;
         private System.Windows.Forms.Label labelPath;
