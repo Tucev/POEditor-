@@ -15,5 +15,10 @@ namespace POEditor
         {
             InitializeComponent ();
         }
+
+        private void FormNewProject_Load (object sender, EventArgs e)
+        {
+
+        }
     }
 }
